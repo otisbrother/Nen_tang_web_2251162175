@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập 4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      width: 600px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px auto;
+      box-shadow: 2px 2px 8px #ccc;
+    }
+
+    h3 {
+      margin-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      padding: 5px;
+      vertical-align: top;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin: 2px;
+    }
+
+    .left-buttons {
+      text-align: left;
+    }
+
+    .right-buttons {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<form>
+  <table>
+    <!-- Basic Info -->
+    <tr><td colspan="2"><h3>Basic Info</h3></td></tr>
+    <tr><td colspan="2"><hr></td></tr>
+    <tr><td>Employee ID:</td><td><input type="text" value="9" /></td></tr>
+    <tr><td>Last Name:</td><td><input type="text" value="Dodsworth" /></td></tr>
+    <tr><td>First Name:</td><td><input type="text" value="Anne" /></td></tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" name="gender" /> Male<br />
+        <input type="radio" name="gender" /> Female<br />
+        <input type="radio" name="gender" /> XXX<br />
+        <input type="radio" name="gender" checked /> ZZZ
+      </td>
+    </tr>
+    <tr><td>Title:</td><td><input type="text" value="Sales Representative" /></td></tr>
+    <tr><td>Suffix:</td><td><input type="text" value="Ms." /></td></tr>
+    <tr><td>BirthDate:</td><td><input type="text" value="1969-07-02 00:00:00" /></td></tr>
+    <tr><td>HireDate:</td><td><input type="text" value="1994-11-15 00:00:00" /></td></tr>
+    <tr><td>SSN # (if applicable):</td><td><input type="text" /></td></tr>
+    <tr>
+      <td>Reports To:</td>
+      <td>
+        <select>
+          <option>Buchanan</option>
+        </select>
+      </td>
+    </tr>
+
+    <!-- Contact Info -->
+    <tr><td colspan="2"><h3>Contact Info</h3></td></tr>
+    <tr><td colspan="2"><hr /></td></tr>
+    <tr><td>Email:</td><td><input type="email" placeholder="name@example.com" /></td></tr>
+    <tr><td>Address:</td><td><input type="text" value="7 Houndstooth Rd." /></td></tr>
+    <tr><td>City:</td><td><input type="text" value="London" /></td></tr>
+    <tr><td>Region:</td><td><input type="text" /></td></tr>
+    <tr><td>Postal Code:</td><td><input type="text" value="WG2 7LT" /></td></tr>
+    <tr>
+      <td>Country:</td>
+      <td>
+        <select>
+          <option>Russian Federation</option>
+        </select>
+      </td>
+    </tr>
+    <tr><td>US Home Phone:</td><td><input type="text" value="(234)234-2342" /></td></tr>
+    <tr><td>Photo:</td><td><input type="text" value="EmpID9.bmp" /></td></tr>
+
+    <!-- Optional Info -->
+    <tr><td colspan="2"><h3>Optional Info</h3></td></tr>
+    <tr><td colspan="2"><hr /></td></tr>
+    <tr>
+      <td>Notes:</td>
+      <td>
+        <textarea rows="4">
+Anne has a BA degree in English from St. Lawrence College. 
+She is fluent in French and German ZZZ.</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>Preferred Shift:</td>
+      <td>
+        <input type="checkbox" /> Regular<br />
+        <input type="checkbox" checked /> Gravy Yard
+      </td>
+    </tr>
+    <tr>
+      <td>Active?</td>
+      <td><input type="checkbox" checked /></td>
+    </tr>
+    <tr>
+      <td>Are you human?</td>
+      <td>
+        <strong>TIDAWO</strong> Click to change<br />
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td class="left-buttons">
+        <button type="button">&lt;</button>
+        <button type="button">&gt;</button>
+      </td>
+      <td class="right-buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+
+      </td>
+   
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
