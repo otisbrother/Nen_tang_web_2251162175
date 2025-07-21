@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Responsive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>📚 Quản lý sinh viên</h1>
+  </nav>
+
+  <div class="container">
+    <form class="form">
+      <h2>➕ Thêm sinh viên</h2>
+      <input type="text" placeholder="Mã sinh viên" required>
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="email" placeholder="Email" required>
+      <input type="date">
+      <div class="gender">
+        <label><input type="radio" name="gender"> Nam</label>
+        <label><input type="radio" name="gender"> Nữ</label>
+      </div>
+      <button type="submit">Thêm</button>
+    </form>
+
+    <div class="table-box">
+      <h2>📋 Danh sách sinh viên</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SV001</td>
+            <td>Nguyễn Văn A</td>
+            <td>a@gmail.com</td>
+          </tr>
+          <tr>
+            <td>SV002</td>
+            <td>Trần Thị B</td>
+            <td>b@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
