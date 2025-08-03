@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form và Bảng Sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="title">➕ Thêm Sinh Viên</h2>
+    <form class="student-form">
+        <label>Mã sinh viên:</label>
+        <input type="text" required><br>
+
+        <label>Họ và tên:</label>
+        <input type="text" required><br>
+
+        <label>Email:</label>
+        <input type="email" required><br>
+
+        <label>Ngày sinh:</label>
+        <input type="date"><br>
+
+        <label>Giới tính:</label>
+        <input type="radio" name="gender"> Nam
+        <input type="radio" name="gender"> Nữ<br>
+
+        <button type="submit">Thêm</button>
+    </form>
+
+    <h2 class="title">📋 Danh sách sinh viên</h2>
+    <table class="student-table">
+        <thead>
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Giới tính</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SV001</td>
+                <td>Nguyễn Văn A</td>
+                <td>a@gmail.com</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>SV002</td>
+                <td>Trần Thị B</td>
+                <td>b@gmail.com</td>
+                <td>Nữ</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

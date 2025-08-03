@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng 2 số</title>
+    <script>
+        function tinhTong() {
+            const a = parseFloat(document.getElementById("so1").value);
+            const b = parseFloat(document.getElementById("so2").value);
+
+            if (isNaN(a) || isNaN(b)) {
+                document.getElementById("ketqua").textContent = "Vui lòng nhập đúng 2 số!";
+                return;
+            }
+
+            const tong = a + b;
+            document.getElementById("ketqua").textContent = `Tổng là: ${tong}`;
+        }
+    </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+    <h2>Tính tổng 2 số</h2>
+    <input type="number" id="so1" placeholder="Số thứ nhất">
+    <input type="number" id="so2" placeholder="Số thứ hai">
+    <button onclick="tinhTong()">Tính tổng</button>
+
+    <h3 id="ketqua" style="color: blue; margin-top: 20px;"></h3>
+</body>
+</html>

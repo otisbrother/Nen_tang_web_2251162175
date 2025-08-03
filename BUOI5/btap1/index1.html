@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Xin chào tên</title>
+    <script>
+        function sayHello() {
+            const name = document.getElementById("nameInput").value;
+            const message = `Xin chào, ${name}!`;
+            document.getElementById("greeting").textContent = message;
+        }
+    </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+    <h2>Nhập tên của bạn</h2>
+    <input type="text" id="nameInput" placeholder="Nhập tên tại đây">
+    <button onclick="sayHello()">Chào bạn</button>
+
+    <h3 id="greeting" style="color: green; margin-top: 20px;"></h3>
+</body>
+</html>

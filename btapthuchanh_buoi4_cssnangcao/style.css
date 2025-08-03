@@ -1,0 +1,13 @@
+/* Hiệu ứng hover cho nút */
+.hover-btn:hover {
+  background-color: #28a745 !important;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Highlight dòng khi rê chuột */
+.hover-row:hover {
+  background-color: #e3f2fd;
+  transition: 0.2s;
+  cursor: pointer;
+}
